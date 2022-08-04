@@ -8,7 +8,7 @@
 body {
   background-color: gray;
   font-family: "Roboto", sans-serif;
-  height: 1200px;
+  height: 100vh;
   scroll-behavior: smooth;
 }
 
@@ -113,6 +113,7 @@ svg {
     background: #fff;
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     display: none;
+    z-index: 2;
   }
 
   header .navbar ul li {
@@ -175,7 +176,6 @@ svg {
 
 /*! MAIN */
 main {
-  padding: 0 15%;
   margin-top: 4.2rem;
 }
 
@@ -200,7 +200,7 @@ main {
 /** COOKIE CONSENT POPUP */
 
 /*! MAIN MEDIA QUERIES */
-@media (max-width: 791px) {
+@media (max-width: 810px) {
   main {
     margin-top: 0;
   }
