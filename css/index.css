@@ -4,7 +4,7 @@
 #landing-section {
   width: 100%;
   height: 45rem;
-  background: url(/images/ATUSA9.jpg) no-repeat;
+  background: url(./images/ATUSA9.jpg) no-repeat;
   background-position: top;
   background-size: cover;
 }
