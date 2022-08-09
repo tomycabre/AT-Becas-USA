@@ -18,6 +18,8 @@
   height: 45rem;
   display: flex;
   flex-direction: column;
+  word-wrap: break-word;
+  overflow: hidden;
   justify-content: center;
   text-align: right;
   font-size: 4.7rem;
@@ -62,9 +64,101 @@
   }
 }
 
-/*! SECOND SECTION */
+/*! MESSAGE SECTION */
+#introduccion-section {
+  width: 100%;
+  margin: 2rem 0;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex ;
+}
 
-/*! SECOND SECTION MEDIA QUERIES */
+.introduccion-message {
+  width: 100%;
+  padding: 0 15%;
+  height: 100%;
+  display: flex;
+}
+
+.introduccion-message .texto-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-wrap: break-word;
+  text-align: left;
+  margin-right: 4rem;
+  color: #333;
+}
+
+.introduccion-message .imagen-message {
+  width: 100%;
+  height: 15rem;
+}
+
+.introduccion-message div h2 {
+  margin-bottom: 0.5rem;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.introduccion-message div p {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.introduccion-message img {
+  width: 20rem;
+  margin-left: 5rem;
+}
+
+/*! MESSAGE SECTION SECTION MEDIA QUERIES */
+@media (max-width: 1118px) {
+  .introduccion-message{
+    padding: 0 1.2rem;
+  }
+  .introduccion-message img{
+    margin-left: 6rem;
+  }
+  .introduccion-message div p{
+    font-size: 1.2rem;
+  }
+  .introduccion-message div h2{
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .introduccion-message{
+    flex-direction: column;
+    justify-content: center;
+  align-items: center;
+  }
+  .introduccion-message .texto-message{
+    margin: 0;
+  }
+  .introduccion-message img{
+    margin: 0;
+  }
+  .introduccion-message div p{
+    font-size: 1.1rem;
+  }
+  .introduccion-message div h2{
+    font-size: 1.7rem;
+  }
+
+@media (max-width: 500px) {
+  .introduccion-message img{
+    width: 13rem;
+  }
+  .introduccion-message div p{
+    font-size: 1rem;
+  }
+  .introduccion-message div h2{
+    font-size: 1.6rem;
+  }
+}
+
+
 
 /*! THIRD SECTION */
 
