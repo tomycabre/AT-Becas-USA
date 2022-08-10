@@ -151,10 +151,10 @@
     width: 13rem;
   }
   .introduccion-message div p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .introduccion-message div h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -217,6 +217,15 @@
   transform: scaleX(1);
 }
 
+.becas-deportivas:hover .card-content > * {
+  opacity: 1;
+}
+
+.becas-deportivas:hover,
+.becas-deportivas:focus-within {
+  transform: scale(1.05);
+}
+
 .becas-container .becas-academicas {
   width: 48%;
   color: #ffffff;
@@ -239,6 +248,15 @@
   transform: scaleX(1);
 }
 
+.becas-academicas:hover .card-content > * {
+  opacity: 1;
+}
+
+.becas-academicas:hover,
+.becas-academicas:focus-within {
+  transform: scale(1.05);
+}
+
 .card-content {
   --padding: 1.5rem;
   padding: var(--padding);
@@ -254,7 +272,7 @@
   position: relative;
   width: max-content;
   max-width: 100%;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 .card-title::after {
@@ -265,7 +283,6 @@
   bottom: 0;
   width: calc(100% + var(--padding));
   background: #e91e63;
-  transform: scaleX(0);
   transform-origin: left;
   transition: transform 500ms ease;
 }
@@ -292,6 +309,47 @@
   color: #333;
 }
 /*! BECAS SECTION MEDIA QUERIES */
+
+@media (hover) {
+  .card-content {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+  .becas-academicas:hover .card-content,
+  .becas-academicas:focus-within .card-content {
+    transform: translateY(0);
+  }
+
+  .becas-academicas:focus-within .card-content {
+    transition-duration: 0ms;
+  }
+
+  .becas-deportivas:hover .card-content,
+  .becas-deportivas:focus-within .card-content {
+    transform: translateY(0);
+  }
+
+  .becas-deportivas:focus-within .card-content {
+    transition-duration: 0ms;
+  }
+
+  .card-content > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 500ms linear;
+  }
+
+  .becas-academicas:focus-within .card-content > *:not(.card-title) {
+    opacity: 1;
+  }
+
+  .becas-deportivas:focus-within .card-content > *:not(.card-title) {
+    opacity: 1;
+  }
+
+  .card-title::after {
+    transform: scaleX(0);
+  }
+}
 
 @media (max-width: 1118px) {
   .becas-container {
