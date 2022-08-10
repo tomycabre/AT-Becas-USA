@@ -157,7 +157,6 @@ svg {
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 2;
-    word-wrap: break-word;
   }
 
   header .navbar ul li {

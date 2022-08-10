@@ -70,7 +70,7 @@
   margin: 2rem 0;
   height: 100%;
   background-color: #ffffff;
-  display: flex ;
+  display: flex;
 }
 
 .introduccion-message {
@@ -113,53 +113,203 @@
 
 /*! MESSAGE SECTION SECTION MEDIA QUERIES */
 @media (max-width: 1118px) {
-  .introduccion-message{
+  .introduccion-message {
     padding: 0 1.2rem;
   }
-  .introduccion-message img{
+  .introduccion-message img {
     margin-left: 6rem;
   }
-  .introduccion-message div p{
+  .introduccion-message div p {
     font-size: 1.2rem;
   }
-  .introduccion-message div h2{
+  .introduccion-message div h2 {
     font-size: 1.8rem;
   }
 }
 
 @media (max-width: 810px) {
-  .introduccion-message{
+  .introduccion-message {
     flex-direction: column;
     justify-content: center;
-  align-items: center;
+    align-items: center;
   }
-  .introduccion-message .texto-message{
+  .introduccion-message .texto-message {
     margin: 0;
   }
-  .introduccion-message img{
+  .introduccion-message img {
     margin: 0;
   }
-  .introduccion-message div p{
+  .introduccion-message div p {
     font-size: 1.1rem;
   }
-  .introduccion-message div h2{
+  .introduccion-message div h2 {
     font-size: 1.7rem;
   }
-
+}
 @media (max-width: 500px) {
-  .introduccion-message img{
+  .introduccion-message img {
     width: 13rem;
   }
-  .introduccion-message div p{
+  .introduccion-message div p {
     font-size: 1rem;
   }
-  .introduccion-message div h2{
+  .introduccion-message div h2 {
     font-size: 1.6rem;
   }
 }
 
+/*! BECAS SECTION */
 
+#becas-section {
+  width: 100%;
+  margin: 5rem 0;
+  padding: 1rem 0;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+}
 
-/*! THIRD SECTION */
+.becas-container {
+  width: 100%;
+  padding: 0 15%;
+  height: 100%;
+  display: flex;
+  gap: 3%;
+}
 
-/*! THIRD SECTION MEDIA QUERIES */
+.becas-container .becas-deportivas {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.becas-container .becas-academicas {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.becas-container .becas-deportivas {
+  width: 48%;
+  color: #ffffff;
+  line-height: 1.6;
+  background: url(./images/atbecas11.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+  transition: transform 500ms ease;
+}
+
+.becas-container .becas-deportivas:hover {
+  transform: scale(1.05);
+}
+
+.becas-deportivas:hover .card-title::after {
+  transform: scaleX(1);
+}
+
+.becas-container .becas-academicas {
+  width: 48%;
+  color: #ffffff;
+  line-height: 1.6;
+  background: url(./images/ATUSA4.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+  transition: transform 500ms ease;
+}
+
+.becas-container .becas-academicas:hover {
+  transform: scale(1.05);
+}
+
+.becas-academicas:hover .card-title::after {
+  transform: scaleX(1);
+}
+
+.card-content {
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.card-title {
+  position: relative;
+  width: max-content;
+  max-width: 100%;
+  margin-bottom: 1.4rem;
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: calc(var(--padding) * -1);
+  bottom: 0;
+  width: calc(100% + var(--padding));
+  background: #e91e63;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+
+.card-body {
+  margin-bottom: 1rem;
+  color: rgb(255, 255, 255, 1);
+}
+
+.card-button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #e91e63;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.25rem;
+}
+
+.card-button:hover,
+.card-button:focus {
+  transition: all 0.25s ease;
+  background-color: #ffffff;
+  color: #333;
+}
+/*! BECAS SECTION MEDIA QUERIES */
+
+@media (max-width: 1118px) {
+  .becas-container {
+    padding: 0 1.2rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .becas-container {
+    flex-direction: column;
+  }
+  .becas-container .becas-deportivas {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .becas-container .becas-academicas {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+}
