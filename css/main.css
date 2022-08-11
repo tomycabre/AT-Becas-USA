@@ -58,6 +58,10 @@ header .navbar ul li a:hover {
   color: #fff;
 }
 
+header .navbar ul li a img {
+  width: 0.5rem;
+}
+
 header .navbar ul li ul {
   position: absolute;
   left: 0;

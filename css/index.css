@@ -18,7 +18,6 @@
   height: 45rem;
   display: flex;
   flex-direction: column;
-  word-wrap: break-word;
   overflow: hidden;
   justify-content: center;
   text-align: right;
@@ -86,7 +85,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  word-wrap: break-word;
   text-align: left;
   color: #333;
 }
@@ -186,7 +184,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  word-wrap: break-word;
   text-align: left;
 }
 
@@ -195,7 +192,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  word-wrap: break-word;
   text-align: left;
 }
 
@@ -488,5 +484,191 @@
 
   .requisitos-4:nth-child(4) {
     width: calc(100%);
+  }
+}
+
+/*! TAB SECTION  */
+
+#tabs-section h1 {
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs {
+  width: 100%;
+  margin: 4rem 0;
+  padding: 0 15%;
+  height: 100%;
+}
+
+.tabs-color {
+  background-color: rgb(66, 64, 64);
+  padding: 20px 30px;
+  overflow: hidden;
+  border-radius: 50px;
+  height: 25rem;
+  color: #fff;
+}
+
+.tabs-color h2 {
+  color: #fff;
+}
+
+.tabs-color p {
+  color: #eee;
+}
+
+.tabs .tab-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.tabs .tab-header > div {
+  width: calc(100% / 4);
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.tabs .tab-header > div.active {
+  color: #00acee;
+}
+
+.tabs .tab-indicator {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background: #eee;
+  left: 0px;
+  border-radius: 5px;
+}
+
+.tabs .tab-body {
+  position: relative;
+  height: calc(100% - 60px);
+  padding: 10px 5px;
+}
+
+.tabs .tab-body h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.tabs .tab-body p {
+  font-size: 1.5rem;
+}
+
+.tabs .tab-body > div {
+  position: absolute;
+  top: -200%;
+  opacity: 0;
+  margin-top: 5px;
+  transform: scale(0.9);
+  transition: opacity 500ms ease-in-out 0ms, transform 500ms ease-in-out 0ms;
+}
+
+.tabs .tab-body > div.active {
+  top: 4rem;
+  opacity: 1;
+  transform: scale(1);
+  margin-top: 0px;
+}
+
+/*! TAB SECTION MEDIA QUERIES */
+
+@media (max-width: 1118px) {
+  .tabs {
+    padding: 0 1.2rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .tabs-color {
+    height: 24rem;
+  }
+  #tabs-section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .tabs .tab-header > div {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  .tabs .tab-body h2 {
+    font-size: 1.7rem;
+    margin-top: -2.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .tabs .tab-body p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .tabs-color {
+    height: 25rem;
+  }
+  #tabs-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .tabs .tab-body h2 {
+    font-size: 1.5rem;
+  }
+
+  .tabs .tab-body p {
+    font-size: 1.2rem;
+  }
+
+  .tabs .tab-header {
+    flex-wrap: wrap;
+  }
+  .tabs .tab-header > div {
+    width: 50%;
+  }
+  .tab-recursos:nth-child(1) {
+    width: calc(50%);
+  }
+
+  .tab-idioma:nth-child(2) {
+    width: calc(50%);
+  }
+
+  .tab-viajes:nth-child(3) {
+    width: calc(50%);
+  }
+
+  .tab-educacion:nth-child(4) {
+    width: calc(50%);
+  }
+
+  .tabs .tab-indicator {
+    top: 10px;
+  }
+
+  .tabs .tab-body > div {
+    margin-top: 100rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .tabs .tab-body h2 {
+    font-size: 1.2rem;
+  }
+
+  .tabs .tab-body p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .tabs-color {
+    height: 30rem;
   }
 }
