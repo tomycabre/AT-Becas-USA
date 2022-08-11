@@ -69,7 +69,7 @@
   width: 100%;
   margin: 2rem 0;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #f6d73c;
   display: flex;
 }
 
@@ -166,10 +166,10 @@
 
 #becas-section {
   width: 100%;
-  margin: 5rem 0;
+  margin: 2.5rem 0 4rem 0;
   padding: 1rem 0;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #f6d73c;
   display: flex;
 }
 
@@ -389,7 +389,7 @@
 
 .requisitos-container {
   width: 100%;
-  padding: 2rem 15%;
+  padding: 2rem 15% 1.4rem 15%;
   height: 100%;
   display: flex;
   flex-direction: column;

@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #f6d73c;
   font-family: "Roboto", sans-serif;
   height: 100vh;
   scroll-behavior: smooth;
@@ -19,7 +19,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: #ffffff;
+  background: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   padding: 0 15%;
   display: flex;
@@ -64,7 +64,7 @@ header .navbar ul li ul {
   position: absolute;
   left: 0;
   width: 12.5rem;
-  background: #fff;
+  background: #ffffff;
   display: none;
 }
 
@@ -115,7 +115,7 @@ svg {
     top: 3.8rem;
     left: 5rem;
     right: 5rem;
-    background: #fff;
+    background: #ffffff;
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 2;
@@ -132,7 +132,7 @@ svg {
   }
 
   header .navbar ul li ul li {
-    background: #eee;
+    background: #ffffff;
   }
 
   #menu-bar:checked ~ .navbar {
@@ -214,7 +214,7 @@ main {
 /*! FOOTER */
 footer {
   padding: 0 15%;
-  background-color: #fff;
+  background-color: #333;
 }
 
 .footer-container {
@@ -238,7 +238,7 @@ footer {
 
 .footer-container-col h4 {
   font-size: 1rem;
-  color: #333;
+  color: #fff;
   margin-bottom: 1.9rem;
   position: relative;
 }
@@ -261,20 +261,21 @@ footer {
 .footer-container-col ul li a {
   font-size: 1rem;
   text-decoration: none;
-  color: #333;
+  color: #fff;
   display: block;
   transition: all 0.3s ease;
 }
 
 .footer-container-col ul li a:hover {
   padding-left: 0.5rem;
+  color: #aaa9aa;
 }
 
 .footer-container-col .social-links a {
   display: inline-block;
   height: 2.5rem;
   width: 2.5rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.6);
   margin: 0 0.6rem 0.6rem 0;
   text-align: center;
   line-height: 2.5rem;
