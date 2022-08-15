@@ -6,10 +6,14 @@
 }
 
 body {
-  background-color: #f6d73c;
+  background-color: #fff;
   font-family: "Roboto", sans-serif;
   height: 100vh;
   scroll-behavior: smooth;
+}
+
+body p {
+  font-weight: 500;
 }
 
 /*! HEADER */
@@ -19,7 +23,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   padding: 0 15%;
   display: flex;
@@ -84,7 +88,8 @@ header .navbar ul li:hover > ul {
 }
 
 header label {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
   color: #333;
   cursor: pointer;
   display: none;
@@ -134,7 +139,7 @@ svg {
   }
 
   header .navbar ul li ul li {
-    background: #ffffff;
+    background: #eeeeee;
   }
 
   #menu-bar:checked ~ .navbar {
@@ -211,12 +216,20 @@ main {
   main {
     margin-top: 0;
   }
+  .btn-wsp {
+    bottom: 1rem;
+    right: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 1.8rem;
+  }
 }
 
 /*! FOOTER */
 footer {
   padding: 0 15%;
-  background-color: #333;
+  background-color: #333456;
 }
 
 .footer-container {

@@ -66,9 +66,14 @@
 /*! MESSAGE SECTION */
 #introduccion-section {
   width: 100%;
-  margin: 2rem 0;
+  padding: 2rem 0;
   height: 100%;
-  background-color: #f6d73c;
+  background: rgb(245, 249, 253);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 249, 253, 1) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
   display: flex;
 }
 
@@ -164,10 +169,14 @@
 
 #becas-section {
   width: 100%;
-  margin: 2.5rem 0 4rem 0;
-  padding: 1rem 0;
+  padding: 4rem 0 3rem 0;
   height: 100%;
-  background-color: #f6d73c;
+  background: rgb(245, 249, 253);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 249, 253, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
   display: flex;
 }
 
@@ -374,7 +383,7 @@
 
 #requisitos-section {
   width: 100%;
-  margin: 5rem 0;
+  margin: 5rem 0 0 0;
   padding: 0;
   height: 100%;
   display: flex;
@@ -391,7 +400,7 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .requisitos-container h1 {
@@ -489,6 +498,17 @@
 
 /*! TAB SECTION  */
 
+#tabs-section {
+  background: rgb(245, 249, 253);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 249, 253, 1) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  object-fit: cover;
+  padding: 4rem 0 1rem 0;
+}
+
 #tabs-section h1 {
   font-size: 2.2rem;
   display: flex;
@@ -497,18 +517,19 @@
 
 .tabs {
   width: 100%;
-  margin: 4rem 0;
+  margin: 4rem 0 0 0;
   padding: 0 15%;
   height: 100%;
 }
 
 .tabs-color {
-  background-color: rgb(66, 64, 64);
+  background-color: #2f354e;
   padding: 20px 30px;
   overflow: hidden;
   border-radius: 50px;
   height: 25rem;
   color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
 }
 
 .tabs-color h2 {
@@ -536,7 +557,7 @@
 }
 
 .tabs .tab-header > div.active {
-  color: #00acee;
+  color: #e91e63;
 }
 
 .tabs .tab-indicator {
@@ -672,3 +693,49 @@
     height: 30rem;
   }
 }
+
+/*! WHY US SECTION */
+
+#whyus-section {
+  padding: 4rem 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(245, 249, 253);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 249, 253, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+#whyus-section h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.whyus-container-section {
+  display: flex;
+}
+
+.whyus-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.whyus-container i {
+  font-size: 2rem;
+  padding-right: 0.6rem;
+}
+
+.whyus-container h4 {
+  font-size: 1.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.whyus-container p {
+  font-size: 1.1rem;
+}
+
+/*! WHY US MEDIA QUERIES */
