@@ -86,7 +86,7 @@
 }
 
 .introduccion-message .texto-message {
-  width: 71ch;
+  max-width: 80ch;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,19 +94,14 @@
   color: #333;
 }
 
-.introduccion-message .imagen-message {
-  width: 100%;
-  height: 15rem;
-}
-
-.introduccion-message .texto-message h1 {
+.introduccion-message div .texto-message h1 {
   margin-bottom: 0.5rem;
   padding: 1rem 0;
   font-size: 2.5rem;
   position: relative;
 }
 
-.introduccion-message .texto-message h1::before {
+.introduccion-message div .texto-message h1::before {
   content: "";
   position: absolute;
   left: 0;
@@ -117,17 +112,29 @@
   width: 10rem;
 }
 
-.introduccion-message .texto-message p {
+.introduccion-message div .texto-message p {
   font-size: 1.4rem;
   padding: 1rem 0;
 }
 
 .introduccion-message div a {
-  position: relative;
-  top: 1rem;
-  padding: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
   background-color: #e91e63;
-  color: #eee;
+  padding: 1rem 1.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(51, 51, 51, 0);
+}
+
+.introduccion-message div a:hover,
+.introduccion-message div a:focus {
+  transition: 0.25s;
+  background-color: #ffffff;
+  color: #e91e63;
+  border: 1px solid #e91e63;
 }
 
 .introduccion-message img {
@@ -189,7 +196,7 @@
 
 #becas-section {
   width: 100%;
-  padding: 4rem 0 3rem 0;
+  padding: 4rem 0 0 0;
   height: 100%;
   background: rgb(245, 249, 253);
   background: linear-gradient(
@@ -835,7 +842,7 @@
   }
 
   .whyus-container-section {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .whyus-container h4 {

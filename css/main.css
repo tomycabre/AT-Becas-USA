@@ -101,7 +101,7 @@ svg {
 
 /*! HEADER MEDIA QUERIES */
 
-@media (max-width: 1325px) {
+@media (max-width: 1350px) {
   header {
     padding: 0 1.2rem;
   }
