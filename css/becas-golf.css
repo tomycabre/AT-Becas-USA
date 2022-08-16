@@ -1,0 +1,451 @@
+/*! LANDING PAGE SECTION */
+
+#landing-section {
+  width: 100%;
+  height: 45rem;
+  background: url(./images/atbecas33.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.landing-message {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0 15%;
+  height: 45rem;
+}
+
+.landing-message div {
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  text-align: right;
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.landing-message p {
+  font-size: 2.4rem;
+  font-weight: bolder;
+}
+
+.landing-message span {
+  background: #f93631;
+  background: linear-gradient(to top, #ff4e47 15%, #ffbcc7);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+/*! LANDING PAGE SECTION MEDIA QUERIES*/
+
+@media (max-width: 1118px) {
+  .landing-message {
+    padding: 0 1.2rem;
+  }
+  .landing-message div {
+    font-size: 4rem;
+  }
+  .landing-message p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .landing-message div {
+    font-size: 3.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing-message div {
+    font-size: 2.4rem;
+  }
+  .landing-message p {
+    font-size: 1.8rem;
+  }
+}
+
+/*! MESSAGE SECTION */
+#introduccion-section {
+  width: 100%;
+  padding: 3rem 0;
+  height: 100%;
+  background: rgb(245, 249, 253);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 249, 253, 1) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+}
+
+.introduccion-message {
+  width: 100%;
+  padding: 0 15%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduccion-message .texto-message {
+  max-width: 80ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: #333;
+}
+
+.introduccion-message div .texto-message h1 {
+  margin-bottom: 0.5rem;
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.introduccion-message div .texto-message h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  background-color: #e91e63;
+  height: 4px;
+  box-sizing: border-box;
+  width: 10rem;
+}
+
+.introduccion-message div .texto-message p {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.introduccion-message div a {
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #e91e63;
+  padding: 1rem 1.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(51, 51, 51, 0);
+}
+
+.introduccion-message div a:hover,
+.introduccion-message div a:focus {
+  transition: 0.25s;
+  background-color: #ffffff;
+  color: #e91e63;
+  border: 1px solid #e91e63;
+}
+
+.introduccion-message img {
+  width: 22rem;
+  margin-left: 5rem;
+}
+
+/*! MESSAGE SECTION SECTION MEDIA QUERIES */
+@media (max-width: 1118px) {
+  .introduccion-message {
+    padding: 0 1.2rem;
+  }
+  .introduccion-message .texto-message {
+    width: 100%;
+  }
+  .introduccion-message img {
+    margin-left: 6rem;
+  }
+  .introduccion-message div .texto-message p {
+    font-size: 1.2rem;
+  }
+  .introduccion-message div .texto-message h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .introduccion-message {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .introduccion-message .texto-message {
+    margin: 0;
+  }
+  .introduccion-message img {
+    margin: 0;
+  }
+  .introduccion-message div p {
+    font-size: 1.2rem;
+  }
+  .introduccion-message div h1 {
+    font-size: 1.8rem;
+  }
+  .introduccion-message div a {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .introduccion-message img {
+    width: 16rem;
+  }
+  .introduccion-message div p {
+    font-size: 1.1rem;
+  }
+  .introduccion-message div h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/*! REQUISITOS SECTION */
+
+#requisitos-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  background-image: url(./images/ATUSA3.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.requisitos-container {
+  width: 100%;
+  padding: 2rem 15% 1.4rem 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.requisitos-container h1 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+}
+
+.requisitos-card p {
+  font-size: 1.2rem;
+}
+
+.requisitos-cards {
+  height: 14.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.requisitos-card {
+  width: 22%;
+  font-size: 1.25rem;
+}
+
+.requisitos-card img {
+  height: 50%;
+  margin-bottom: 0.4rem;
+}
+
+.requisitos-1 img {
+  width: 10rem;
+}
+
+.requisitos-2 img {
+  width: 10rem;
+}
+
+.requisitos-3 img {
+  width: 10rem;
+}
+
+.requisitos-4 img {
+  width: 10rem;
+}
+
+/*! REQUISITOS SECTION MEDIA QUERIES */
+
+@media (max-width: 1118px) {
+  .requisitos-container {
+    padding: 2rem 1.2rem;
+  }
+  .requisitos-container h1 {
+    font-size: 2rem;
+  }
+  .requisitos-card p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .requisitos-container h1 {
+    font-size: 1.9rem;
+  }
+  .requisitos-card p {
+    font-size: 1.1rem;
+  }
+  .requisitos-cards {
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+  }
+  .requisitos-1:nth-child(1) {
+    width: calc(50% - 24px);
+    margin-bottom: 2rem;
+  }
+
+  .requisitos-2:nth-child(2) {
+    width: calc(50% - 24px);
+    margin-bottom: 2rem;
+  }
+
+  .requisitos-3:nth-child(3) {
+    width: calc(50% - 24px);
+  }
+
+  .requisitos-4:nth-child(4) {
+    width: calc(50% - 24px);
+  }
+}
+@media (max-width: 500px) {
+  .requisitos-container h1 {
+    font-size: 1.7rem;
+  }
+  .requisitos-card p {
+    font-size: 1.1rem;
+  }
+  .requisitos-1:nth-child(1) {
+    width: calc(100%);
+    margin-bottom: 2rem;
+  }
+
+  .requisitos-2:nth-child(2) {
+    width: calc(100%);
+    margin-bottom: 2rem;
+  }
+
+  .requisitos-3:nth-child(3) {
+    width: calc(100%);
+    margin-bottom: 2rem;
+  }
+
+  .requisitos-4:nth-child(4) {
+    width: calc(100%);
+  }
+}
+
+/*! WHY US SECTION */
+
+#whyus-section {
+  padding: 4rem 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(245, 249, 253);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 249, 253, 1) 30%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+#whyus-section h1 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.whyus-container-section {
+  display: flex;
+}
+
+.whyus-container {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.whyus-container i {
+  font-size: 2rem;
+  padding-right: 0.6rem;
+  color: #e91e63;
+}
+
+.whyus-container h4 {
+  font-size: 1.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.whyus-container p {
+  font-size: 1.1rem;
+}
+
+/*! WHY US MEDIA QUERIES */
+
+@media (max-width: 1118px) {
+  #whyus-section {
+    padding: 4rem 0;
+  }
+
+  #whyus-section h1 {
+    font-size: 2rem;
+  }
+
+  .whyus-container i {
+    font-size: 1.8rem;
+    padding-right: 0.6rem;
+  }
+
+  .whyus-container h4 {
+    font-size: 1.2rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .whyus-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 810px) {
+  #whyus-section h1 {
+    font-size: 1.9rem;
+  }
+  .whyus-container i {
+    font-size: 1.7rem;
+    padding-right: 0.6rem;
+  }
+
+  .whyus-container h4 {
+    font-size: 1.1rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .whyus-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #whyus-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .whyus-container-section {
+    flex-direction: column;
+  }
+
+  .whyus-container h4 {
+    font-size: 1rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .whyus-container p {
+    font-size: 0.9rem;
+  }
+}
