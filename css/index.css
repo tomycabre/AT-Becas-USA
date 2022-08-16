@@ -99,15 +99,35 @@
   height: 15rem;
 }
 
-.introduccion-message div h1 {
+.introduccion-message .texto-message h1 {
   margin-bottom: 0.5rem;
   padding: 1rem 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  position: relative;
 }
 
-.introduccion-message div p {
+.introduccion-message .texto-message h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  background-color: #e91e63;
+  height: 4px;
+  box-sizing: border-box;
+  width: 10rem;
+}
+
+.introduccion-message .texto-message p {
   font-size: 1.4rem;
   padding: 1rem 0;
+}
+
+.introduccion-message div a {
+  position: relative;
+  top: 1rem;
+  padding: 1rem;
+  background-color: #e91e63;
+  color: #eee;
 }
 
 .introduccion-message img {
@@ -126,10 +146,10 @@
   .introduccion-message img {
     margin-left: 6rem;
   }
-  .introduccion-message div p {
+  .introduccion-message div .texto-message p {
     font-size: 1.2rem;
   }
-  .introduccion-message div h1 {
+  .introduccion-message div .texto-message h1 {
     font-size: 1.8rem;
   }
 }
@@ -147,21 +167,21 @@
     margin: 0;
   }
   .introduccion-message div p {
-    font-size: 1.1rem;
-  }
-  .introduccion-message div h1 {
-    font-size: 1.7rem;
-  }
-}
-@media (max-width: 500px) {
-  .introduccion-message img {
-    width: 13rem;
-  }
-  .introduccion-message div p {
     font-size: 1.2rem;
   }
   .introduccion-message div h1 {
     font-size: 1.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .introduccion-message img {
+    width: 16rem;
+  }
+  .introduccion-message div p {
+    font-size: 1.1rem;
+  }
+  .introduccion-message div h1 {
+    font-size: 1.7rem;
   }
 }
 
@@ -409,6 +429,10 @@
   margin-bottom: 2.5rem;
 }
 
+.requisitos-card p {
+  font-size: 1.2rem;
+}
+
 .requisitos-cards {
   height: 14.5rem;
   display: flex;
@@ -449,9 +473,21 @@
   .requisitos-container {
     padding: 2rem 1.2rem;
   }
+  .requisitos-container h1 {
+    font-size: 2rem;
+  }
+  .requisitos-card p {
+    font-size: 1.15rem;
+  }
 }
 
 @media (max-width: 810px) {
+  .requisitos-container h1 {
+    font-size: 1.9rem;
+  }
+  .requisitos-card p {
+    font-size: 1.1rem;
+  }
   .requisitos-cards {
     flex-wrap: wrap;
     height: 100%;
@@ -476,6 +512,12 @@
   }
 }
 @media (max-width: 500px) {
+  .requisitos-container h1 {
+    font-size: 1.7rem;
+  }
+  .requisitos-card p {
+    font-size: 1.1rem;
+  }
   .requisitos-1:nth-child(1) {
     width: calc(100%);
     margin-bottom: 2rem;
@@ -510,7 +552,7 @@
 }
 
 #tabs-section h1 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   display: flex;
   justify-content: center;
 }
@@ -523,13 +565,13 @@
 }
 
 .tabs-color {
-  background-color: #2f354e;
+  background-color: #333456;
   padding: 20px 30px;
   overflow: hidden;
   border-radius: 50px;
   height: 25rem;
   color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
 }
 
 .tabs-color h2 {
@@ -537,7 +579,7 @@
 }
 
 .tabs-color p {
-  color: #eee;
+  color: #fff;
 }
 
 .tabs .tab-header {
@@ -606,6 +648,9 @@
   .tabs {
     padding: 0 1.2rem;
   }
+  #tabs-section h1 {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 810px) {
@@ -613,7 +658,7 @@
     height: 24rem;
   }
   #tabs-section h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     text-align: center;
   }
   .tabs .tab-header > div {
@@ -704,13 +749,13 @@
   background: rgb(245, 249, 253);
   background: linear-gradient(
     180deg,
-    rgba(245, 249, 253, 1) 50%,
+    rgba(245, 249, 253, 1) 30%,
     rgba(255, 255, 255, 0) 100%
   );
 }
 
 #whyus-section h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding-bottom: 1rem;
 }
 
@@ -721,12 +766,13 @@
 .whyus-container {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  margin: 1rem;
 }
 
 .whyus-container i {
   font-size: 2rem;
   padding-right: 0.6rem;
+  color: #e91e63;
 }
 
 .whyus-container h4 {
@@ -739,3 +785,65 @@
 }
 
 /*! WHY US MEDIA QUERIES */
+
+@media (max-width: 1118px) {
+  #whyus-section {
+    padding: 4rem 0;
+  }
+
+  #whyus-section h1 {
+    font-size: 2rem;
+  }
+
+  .whyus-container i {
+    font-size: 1.8rem;
+    padding-right: 0.6rem;
+  }
+
+  .whyus-container h4 {
+    font-size: 1.2rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .whyus-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 810px) {
+  #whyus-section h1 {
+    font-size: 1.9rem;
+  }
+  .whyus-container i {
+    font-size: 1.7rem;
+    padding-right: 0.6rem;
+  }
+
+  .whyus-container h4 {
+    font-size: 1.1rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .whyus-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #whyus-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .whyus-container-section {
+    flex-direction: row;
+  }
+
+  .whyus-container h4 {
+    font-size: 1rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .whyus-container p {
+    font-size: 0.9rem;
+  }
+}
