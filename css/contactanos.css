@@ -44,7 +44,8 @@ form section .input-container label {
   font-family: "Raleway", sans-serif;
 }
 form section .input-container input,
-form section .input-container textarea {
+form section .input-container textarea,
+select {
   width: 100%;
   padding: 5px 10px;
   height: 40px;
