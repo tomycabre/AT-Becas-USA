@@ -545,17 +545,98 @@
   }
 }
 
-/*! TAB SECTION  */
-
-#tabs-section {
+/*! DEPORTES SECTION */
+#deportes-section {
+  width: 100%;
+  padding: 3rem 0;
+  height: 100%;
   background: rgb(245, 249, 253);
   background: linear-gradient(
     0deg,
     rgba(245, 249, 253, 1) 100%,
     rgba(255, 255, 255, 0) 100%
   );
+}
+
+#deportes-section h1 {
+  margin-bottom: 0.5rem;
+  padding: 1rem 0;
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.deportes-container {
+  padding: 0 15%;
+  display: inline-block;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: fit-content(30%) fit-content(30%) fit-content(30%);
+  place-items: center;
+  text-align: center;
+  row-gap: 2rem;
+}
+
+.deportes-container .deporte-card {
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  overflow: hidden;
+  border-radius: 10px;
+  color: #333;
+}
+
+.deporte-card h3 {
+  padding: 2rem 3rem;
+}
+
+.deporte-card img {
+  width: 100%;
+  max-height: 24vh;
+}
+
+/*! DEPORTES SECTION MEDIA QUERIES*/
+
+@media (max-width: 1350px) {
+  .deportes-container {
+    padding: 0 1.2rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .deportes-container {
+    grid-template-columns: fit-content(45%) fit-content(45%);
+  }
+  #deportes-section h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .deportes-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .deporte-card img {
+    width: 100%;
+    height: 30vh;
+  }
+  #deportes-section h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/*! TAB SECTION  */
+
+#tabs-section {
   object-fit: cover;
-  padding: 4rem 0 1rem 0;
+  padding: 3rem 0 1rem 0;
+  background: rgb(245, 249, 253);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 249, 253, 1) 30%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 #tabs-section h1 {
@@ -753,12 +834,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(245, 249, 253);
-  background: linear-gradient(
-    180deg,
-    rgba(245, 249, 253, 1) 30%,
-    rgba(255, 255, 255, 0) 100%
-  );
 }
 
 #whyus-section h1 {

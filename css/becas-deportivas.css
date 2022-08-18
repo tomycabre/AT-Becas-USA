@@ -4,12 +4,12 @@
   width: 100%;
   height: 45rem;
   background: url(./images/ATUSA5.jpg) no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
 }
 
 .landing-message {
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 0 15%;
   height: 45rem;
 }
@@ -67,5 +67,218 @@
   }
   .landing-message p {
     font-size: 1.8rem;
+  }
+}
+
+/*! MESSAGE SECTION */
+#introduccion-section {
+  width: 100%;
+  padding: 3rem 0;
+  height: 100%;
+  background: rgb(245, 249, 253);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 249, 253, 1) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+}
+
+.introduccion-message {
+  width: 100%;
+  padding: 0 15%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduccion-message .texto-message {
+  max-width: 80ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: #333;
+}
+
+.introduccion-message div .texto-message h1 {
+  margin-bottom: 0.5rem;
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.introduccion-message div .texto-message h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  background-color: #e91e63;
+  height: 4px;
+  box-sizing: border-box;
+  width: 10rem;
+}
+
+.introduccion-message div .texto-message p {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.introduccion-message div a {
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #e91e63;
+  padding: 1rem 1.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(51, 51, 51, 0);
+}
+
+.introduccion-message div a:hover,
+.introduccion-message div a:focus {
+  transition: 0.25s;
+  background-color: #ffffff;
+  color: #e91e63;
+  border: 1px solid #e91e63;
+}
+
+.introduccion-message img {
+  width: 22rem;
+  margin-left: 5rem;
+}
+
+/*! MESSAGE SECTION SECTION MEDIA QUERIES */
+@media (max-width: 1118px) {
+  .introduccion-message {
+    padding: 0 1.2rem;
+  }
+  .introduccion-message .texto-message {
+    width: 100%;
+  }
+  .introduccion-message img {
+    margin-left: 6rem;
+  }
+  .introduccion-message div .texto-message p {
+    font-size: 1.2rem;
+  }
+  .introduccion-message div .texto-message h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .introduccion-message {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .introduccion-message .texto-message {
+    margin: 0;
+  }
+  .introduccion-message img {
+    margin: 0;
+  }
+  .introduccion-message div p {
+    font-size: 1.2rem;
+  }
+  .introduccion-message div h1 {
+    font-size: 1.8rem;
+  }
+  .introduccion-message div a {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .introduccion-message img {
+    width: 16rem;
+  }
+  .introduccion-message div p {
+    font-size: 1.1rem;
+  }
+  .introduccion-message div h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/*! DEPORTES SECTION */
+#deportes-section {
+  width: 100%;
+  padding: 3rem 0;
+  height: 100%;
+  background: rgb(245, 249, 253);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 249, 253, 1) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+#deportes-section h1 {
+  margin-bottom: 0.5rem;
+  padding: 1rem 0;
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.deportes-container {
+  padding: 0 15%;
+  display: inline-block;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: fit-content(30%) fit-content(30%) fit-content(30%);
+  place-items: center;
+  text-align: center;
+  row-gap: 2rem;
+}
+
+.deportes-container .deporte-card {
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  overflow: hidden;
+  border-radius: 10px;
+  color: #333;
+}
+
+.deporte-card h3 {
+  padding: 2rem 3rem;
+}
+
+.deporte-card img {
+  width: 100%;
+  max-height: 24vh;
+}
+
+/*! DEPORTES SECTION MEDIA QUERIES*/
+
+@media (max-width: 1350px) {
+  .deportes-container {
+    padding: 0 1.2rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .deportes-container {
+    grid-template-columns: fit-content(45%) fit-content(45%);
+  }
+  #deportes-section h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .deportes-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .deporte-card img {
+    width: 100%;
+    height: 30vh;
+  }
+  #deportes-section h1 {
+    font-size: 2.2rem;
   }
 }
