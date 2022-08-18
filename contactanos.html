@@ -11,7 +11,8 @@
       href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,300italic,400italic|Montserrat:100,200,300,400,500,600,700,800,900,300italic,400italic&subset=latin,latin-ext"
     />
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet/less" type="text/css" href="/css/contactanos.scss" />
+    <script src="https://cdn.jsdelivr.net/npm/less" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -81,7 +82,58 @@
     </header>
     <!--? © 2022 Tomas Cabrera | Github: https://github.com/tomycabre | All Rights Reserved -->
     <!--! MAIN -->
-    <main></main>
+    <main>
+      <h2>Contactanos</h2>
+      <form onsubmit="window.location.reload()" action="POST" name="contact-us">
+        <section class="left">
+          <div class="input-container">
+            <label for="nombre">Nombre Completo</label>
+            <input name="nombre" id="nombre" type="text" required />
+          </div>
+          <div class="input-container">
+            <label for="edad">Fecha de Nacimiento</label>
+            <input name="edad" id="edad" type="date" required />
+          </div>
+          <div class="input-container">
+            <label for="telefono">Numero de Telefono</label>
+            <input name="telefono" id="telefono" type="number" required />
+          </div>
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" required />
+          </div>
+          <div class="input-container">
+            <label for="sexo">Sexo</label>
+            <input name="sexo" id="sexo" type="text" required />
+          </div>
+        </section>
+        <section class="right">
+          <div class="input-container">
+            <label for="pais">Pais</label>
+            <input name="pais" id="pais" type="text" required />
+          </div>
+          <div class="input-container">
+            <label for="ciudad">Ciudad</label>
+            <input name="ciudad" id="ciudad" type="text" required />
+          </div>
+          <div class="input-container">
+            <label for="deporte">Deporte</label>
+            <input name="deporte" id="deporte" type="text" required />
+          </div>
+          <div class="input-container">
+            <label for="curso">Curso Actual</label>
+            <input name="curso" id="curso" type="text" required />
+          </div>
+          <div class="input-container">
+            <label for="club">Club</label>
+            <input name="club" id="club" type="text" required />
+          </div>
+        </section>
+        <div class="send-container">
+          <input type="submit" value="Enviar" onclick="return true" />
+        </div>
+      </form>
+    </main>
     <!--? © 2022 Tomas Cabrera | Github: https://github.com/tomycabre | All Rights Reserved -->
     <!--! FOOTER -->
     <footer>
@@ -142,5 +194,17 @@
       </div>
     </footer>
     <!--? © 2022 Tomas Cabrera | Github: https://github.com/tomycabre | All Rights Reserved -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwND6bc35hPVgkrvaSjuMsLZZARo2gyQVSBl6nqCIjuTDSvs4ZPGePXW-jY8eIwyU9atw/exec";
+      const form = document.forms["contact-us"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,114 @@
+main {
+  padding: 1rem 0 3rem 0;
+  background: rgb(245, 249, 253);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 249, 253, 1) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+h2 {
+  text-align: center;
+  margin: 50px 0;
+  color: #494b7b;
+  font-size: 47px;
+  font-family: "Raleway", sans-serif;
+  @media (max-width: 540px) {
+    font-size: 28px;
+    margin: 30px 0;
+  }
+}
+
+form {
+  padding: 0 15%;
+  section {
+    width: calc(50% - 40px);
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #333456;
+    border-radius: 5px;
+    &.left {
+      float: left;
+    }
+    &.right {
+      float: right;
+    }
+    .input-container {
+      label {
+        display: block;
+        margin-bottom: 4px;
+        color: white;
+        font-size: 16px;
+        text-shadow: 0px 2px 1px #525489;
+        font-family: "Raleway", sans-serif;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 5px 10px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        background: #494b7b;
+        box-shadow: 0 2px 0px #525489;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        color: #ffffff;
+        &:focus {
+          outline: none;
+          background: #676aac;
+        }
+      }
+      textarea {
+        height: 122px;
+        padding: 15px 10px;
+        resize: none;
+      }
+      padding: 10px;
+    }
+  }
+  .send-container {
+    float: right;
+    width: 100%;
+    text-align: right;
+    margin-right: 20px;
+    input {
+      background: #333456;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      &:hover {
+        background: #525489;
+      }
+    }
+  }
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  @media (max-width: 1118px) {
+    padding: 0 1.2rem;
+  }
+  @media (max-width: 810px) {
+    margin-bottom: 50px;
+    section {
+      width: 100%;
+      margin: 0;
+      &.left {
+        margin-bottom: -30px;
+      }
+    }
+    .send-container {
+      margin-right: 0;
+      margin-top: 15px;
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
