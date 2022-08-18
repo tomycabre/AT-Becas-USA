@@ -11,8 +11,7 @@
       href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,300italic,400italic|Montserrat:100,200,300,400,500,600,700,800,900,300italic,400italic&subset=latin,latin-ext"
     />
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet/less" type="text/css" href="/css/contactanos.scss" />
-    <script src="https://cdn.jsdelivr.net/npm/less" defer></script>
+    <link rel="stylesheet" href="/css/contactanos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -84,7 +83,7 @@
     <!--! MAIN -->
     <main>
       <h2>Contactanos</h2>
-      <form onsubmit="window.location.reload()" action="POST" name="contact-us">
+      <form action="POST" name="contact-us">
         <section class="left">
           <div class="input-container">
             <label for="nombre">Nombre Completo</label>
@@ -194,17 +193,6 @@
       </div>
     </footer>
     <!--? © 2022 Tomas Cabrera | Github: https://github.com/tomycabre | All Rights Reserved -->
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbwND6bc35hPVgkrvaSjuMsLZZARo2gyQVSBl6nqCIjuTDSvs4ZPGePXW-jY8eIwyU9atw/exec";
-      const form = document.forms["contact-us"];
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+    <script src="/js/submit.js"></script>
   </body>
 </html>
