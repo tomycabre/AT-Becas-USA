@@ -1,0 +1,417 @@
+/*! LANDING PAGE SECTION */
+
+#landing-section {
+  width: 100%;
+  height: 45rem;
+  background: url(./images/ATUSA4.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.landing-message {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 15%;
+  height: 45rem;
+}
+
+.landing-message div {
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  text-align: right;
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.landing-message p {
+  font-size: 2.4rem;
+  font-weight: bolder;
+}
+
+.landing-message span {
+  background: #f93631;
+  background: linear-gradient(to top, #ff4e47 15%, #ffbcc7);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+/*! LANDING PAGE SECTION MEDIA QUERIES*/
+
+@media (max-width: 1118px) {
+  .landing-message {
+    padding: 0 1.2rem;
+  }
+  .landing-message div {
+    font-size: 4rem;
+  }
+  .landing-message p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .landing-message div {
+    font-size: 3.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing-message div {
+    font-size: 2.4rem;
+  }
+  .landing-message p {
+    font-size: 1.8rem;
+  }
+}
+
+/*! MESSAGE SECTION */
+#introduccion-section {
+  width: 100%;
+  padding: 3rem 0;
+  height: 100%;
+  background: rgb(245, 249, 253);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 249, 253, 1) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+}
+
+.introduccion-message {
+  width: 100%;
+  padding: 0 15%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduccion-message .texto-message {
+  max-width: 80ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: #333;
+}
+
+.introduccion-message div .texto-message h1 {
+  margin-bottom: 0.5rem;
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.introduccion-message div .texto-message h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  background-color: #e91e63;
+  height: 4px;
+  box-sizing: border-box;
+  width: 10rem;
+}
+
+.introduccion-message div .texto-message p {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.introduccion-message div a {
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #e91e63;
+  padding: 1rem 1.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(51, 51, 51, 0);
+}
+
+.introduccion-message div a:hover,
+.introduccion-message div a:focus {
+  transition: 0.25s;
+  background-color: #ffffff;
+  color: #e91e63;
+  border: 1px solid #e91e63;
+}
+
+.introduccion-message img {
+  width: 22rem;
+  margin-left: 5rem;
+}
+
+/*! MESSAGE SECTION SECTION MEDIA QUERIES */
+@media (max-width: 1118px) {
+  .introduccion-message {
+    padding: 0 1.2rem;
+  }
+  .introduccion-message .texto-message {
+    width: 100%;
+  }
+  .introduccion-message img {
+    margin-left: 6rem;
+  }
+  .introduccion-message div .texto-message p {
+    font-size: 1.2rem;
+  }
+  .introduccion-message div .texto-message h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .introduccion-message {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .introduccion-message .texto-message {
+    margin: 0;
+  }
+  .introduccion-message img {
+    margin: 0;
+  }
+  .introduccion-message div p {
+    font-size: 1.2rem;
+  }
+  .introduccion-message div h1 {
+    font-size: 1.8rem;
+  }
+  .introduccion-message div a {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .introduccion-message img {
+    width: 16rem;
+  }
+  .introduccion-message div p {
+    font-size: 1.1rem;
+  }
+  .introduccion-message div h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/*! BECAS SECTION */
+
+#becas-section {
+  width: 100%;
+  padding: 2rem 0 4rem 0;
+  height: 100%;
+  background: rgb(245, 249, 253);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 249, 253, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+}
+
+.becas-container {
+  width: 100%;
+  padding: 0 15%;
+  height: 100%;
+  display: flex;
+  gap: 3%;
+}
+
+.becas-container .becas-deportivas {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.becas-container .becas-academicas {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.becas-container .becas-deportivas {
+  width: 48%;
+  color: #ffffff;
+  line-height: 1.6;
+  background: url(./images/atbecas34.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+  transition: transform 500ms ease;
+}
+
+.becas-container .becas-deportivas:hover {
+  transform: scale(1.05);
+}
+
+.becas-deportivas:hover .card-title::after {
+  transform: scaleX(1);
+}
+
+.becas-deportivas:hover .card-content > * {
+  opacity: 1;
+}
+
+.becas-deportivas:hover,
+.becas-deportivas:focus-within {
+  transform: scale(1.05);
+}
+
+.becas-container .becas-academicas {
+  width: 48%;
+  color: #ffffff;
+  line-height: 1.6;
+  background: url(./images/atbecas35.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+  transition: transform 500ms ease;
+}
+
+.becas-container .becas-academicas:hover {
+  transform: scale(1.05);
+}
+
+.becas-academicas:hover .card-title::after {
+  transform: scaleX(1);
+}
+
+.becas-academicas:hover .card-content > * {
+  opacity: 1;
+}
+
+.becas-academicas:hover,
+.becas-academicas:focus-within {
+  transform: scale(1.05);
+}
+
+.card-content {
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.card-title {
+  position: relative;
+  width: max-content;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: calc(var(--padding) * -1);
+  bottom: 0;
+  width: calc(100% + var(--padding));
+  background: #e91e63;
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+
+.card-body {
+  margin-bottom: 1rem;
+  color: rgb(255, 255, 255, 1);
+}
+
+.card-button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #e91e63;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.25rem;
+}
+
+.card-button:hover,
+.card-button:focus {
+  transition: all 0.25s ease;
+  background-color: #ffffff;
+  color: #333;
+}
+/*! BECAS SECTION MEDIA QUERIES */
+
+@media (hover) {
+  .card-content {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+  .becas-academicas:hover .card-content,
+  .becas-academicas:focus-within .card-content {
+    transform: translateY(0);
+  }
+
+  .becas-academicas:focus-within .card-content {
+    transition-duration: 0ms;
+  }
+
+  .becas-deportivas:hover .card-content,
+  .becas-deportivas:focus-within .card-content {
+    transform: translateY(0);
+  }
+
+  .becas-deportivas:focus-within .card-content {
+    transition-duration: 0ms;
+  }
+
+  .card-content > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 500ms linear;
+  }
+
+  .becas-academicas:focus-within .card-content > *:not(.card-title) {
+    opacity: 1;
+  }
+
+  .becas-deportivas:focus-within .card-content > *:not(.card-title) {
+    opacity: 1;
+  }
+
+  .card-title::after {
+    transform: scaleX(0);
+  }
+}
+
+@media (max-width: 1118px) {
+  .becas-container {
+    padding: 0 1.2rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .becas-container {
+    flex-direction: column;
+  }
+  .becas-container .becas-deportivas {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .becas-container .becas-academicas {
+    width: 100%;
+  }
+}
