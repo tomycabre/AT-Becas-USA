@@ -202,11 +202,150 @@
   }
 }
 
+/*! REQUISITOS SECTION */
+
+#requisitos-section {
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  background-image: url(./images/ATUSA3.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.requisitos-container {
+  width: 100%;
+  padding: 2rem 15% 1.4rem 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.requisitos-container h1 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+}
+
+.requisitos-card p {
+  font-size: 1.2rem;
+}
+
+.requisitos-cards {
+  height: 14.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.requisitos-card {
+  width: 22%;
+  font-size: 1.25rem;
+}
+
+.requisitos-card img {
+  height: 50%;
+  margin-bottom: 0.4rem;
+}
+
+.requisitos-1 img {
+  width: 10rem;
+}
+
+.requisitos-2 img {
+  width: 10rem;
+}
+
+.requisitos-3 img {
+  width: 10rem;
+}
+
+.requisitos-4 img {
+  width: 10rem;
+}
+
+/*! REQUISITOS SECTION MEDIA QUERIES */
+
+@media (max-width: 1118px) {
+  .requisitos-container {
+    padding: 2rem 1.2rem;
+  }
+  .requisitos-container h1 {
+    font-size: 2rem;
+  }
+  .requisitos-card p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .requisitos-container h1 {
+    font-size: 1.9rem;
+  }
+  .requisitos-card p {
+    font-size: 1.1rem;
+  }
+  .requisitos-cards {
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+  }
+  .requisitos-1:nth-child(1) {
+    width: calc(50% - 24px);
+    margin-bottom: 2rem;
+  }
+
+  .requisitos-2:nth-child(2) {
+    width: calc(50% - 24px);
+    margin-bottom: 2rem;
+  }
+
+  .requisitos-3:nth-child(3) {
+    width: calc(50% - 24px);
+  }
+
+  .requisitos-4:nth-child(4) {
+    width: calc(50% - 24px);
+  }
+}
+@media (max-width: 500px) {
+  .requisitos-container h1 {
+    font-size: 1.7rem;
+  }
+  .requisitos-card p {
+    font-size: 1.1rem;
+  }
+  .requisitos-1:nth-child(1) {
+    width: calc(100%);
+    margin-bottom: 2rem;
+  }
+
+  .requisitos-2:nth-child(2) {
+    width: calc(100%);
+    margin-bottom: 2rem;
+  }
+
+  .requisitos-3:nth-child(3) {
+    width: calc(100%);
+    margin-bottom: 2rem;
+  }
+
+  .requisitos-4:nth-child(4) {
+    width: calc(100%);
+  }
+}
+
 /*! BECAS SECTION */
 
 #becas-section {
   width: 100%;
-  padding: 2rem 0 4rem 0;
+  padding: 4rem 0 4rem 0;
   height: 100%;
   background: rgb(245, 249, 253);
   background: linear-gradient(
