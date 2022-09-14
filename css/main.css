@@ -70,6 +70,7 @@ header .navbar ul li button {
   background-color: #fff;
   border: 0px;
   -webkit-font-smoothing: antialiased;
+  cursor: pointer;
 }
 
 header .navbar ul li button:hover {
