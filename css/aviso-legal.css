@@ -1,0 +1,75 @@
+/*! LANDING PAGE SECTION */
+
+#privacidad {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background: rgb(245, 249, 253);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 249, 253, 1) 30%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.landing-message {
+  padding: 0 15%;
+}
+
+.landing-message div {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.landing-message h1 {
+  text-align: center;
+}
+
+.landing-message h2 {
+  font-size: 1.6rem;
+  margin-top: 1.8rem;
+  text-align: center;
+}
+
+.landing-message p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.landing-message ul {
+  padding: 0 8%;
+}
+
+.landing-message li p {
+  margin-top: 1rem;
+}
+
+.text-end {
+  padding-bottom: 4rem;
+}
+/*! LANDING PAGE SECTION MEDIA QUERIES*/
+
+@media (max-width: 1118px) {
+  .landing-message {
+    padding: 0 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing-message div {
+    font-size: 1.4rem;
+  }
+  .landing-message p {
+    font-size: 1rem;
+  }
+  .landing-message h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 300px) {
+}

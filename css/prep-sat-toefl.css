@@ -349,7 +349,7 @@
 }
 
 /*! TOEFL MESSAGE SECTION */
-#toefl-section {
+#toefl {
   width: 100%;
   padding: 2rem 0;
   height: 100%;
@@ -479,7 +479,7 @@
 }
 
 /*! SAT MESSAGE SECTION */
-#sat-section {
+#sat {
   width: 100%;
   padding: 2rem 0;
   height: 100%;
