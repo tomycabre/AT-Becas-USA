@@ -6,7 +6,12 @@
 }
 
 body {
-  background-color: #fff;
+  background: rgb(245, 249, 253);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 249, 253, 1) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
   font-family: "Raleway", sans-serif;
   height: 100vh;
   scroll-behavior: smooth;
